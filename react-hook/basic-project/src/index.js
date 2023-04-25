@@ -1,11 +1,11 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
-import AppXY from './basic-xy/AppXY';
+import AppMentors from './basic-mentors/AppMentors';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <AppXY />
+    <AppMentors />
   </React.StrictMode>,
 );
