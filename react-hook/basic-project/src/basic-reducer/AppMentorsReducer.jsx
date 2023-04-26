@@ -1,7 +1,7 @@
 import React, { useReducer } from 'react';
 import { personReducer } from './reducer/personReducer';
 
-export default function AppMentor() {
+export default function AppMentorsReducer() {
   const [person, dispatch] = useReducer(personReducer, initialPerson);
 
   const handleAdd = () => {
