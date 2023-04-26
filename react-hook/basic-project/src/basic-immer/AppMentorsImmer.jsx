@@ -27,7 +27,8 @@ export default function AppMentorsImmer() {
     const name = prompt(`누구를 삭제하고 싶나요?`);
 
     updatePerson(person => {
-      person.mentors = person.mentors.filter(m => m.name !== name);
+      const idx = person.mentors.findIndex(m => m.name === name);
+      person.mentors.splice(idx, 1);
     });
   };
 
